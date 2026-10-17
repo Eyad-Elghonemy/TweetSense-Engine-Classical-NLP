@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Soft Tech Cyan Gradient for Speech Bubble Frame -->
+    <linearGradient id="bubble-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+
+    <!-- Deep Navy Interior Fill for Contrast -->
+    <linearGradient id="navy-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A192F" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Speech Bubble Outer Silhouette -->
+  <path d="M 220 280 
+           C 220 200, 280 140, 380 140 
+           L 644 140 
+           C 744 140, 804 200, 804 300 
+           L 804 500 
+           C 804 600, 744 660, 644 660 
+           L 480 660 
+           L 320 800 
+           L 350 660 
+           C 270 660, 220 600, 220 500 Z" 
+        fill="url(#navy-bg)" 
+        stroke="url(#bubble-frame)" 
+        stroke-width="36" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- ========================================== -->
+  <!-- SENTIMENT PULSE WAVE (GREEN, AMBER, RED)   -->
+  <!-- ========================================== -->
+
+  <!-- 1. Positive Segment (Emerald Green - Upward Peak) -->
+  <path d="M 290 440 L 370 440 L 430 310 L 470 440" 
+        fill="none" 
+        stroke="#10B981" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- 2. Neutral Segment (Amber/Yellow - Baseline Transition) -->
+  <path d="M 470 440 L 550 440" 
+        fill="none" 
+        stroke="#F59E0B" 
+        stroke-width="32" 
+        stroke-linecap="round" />
+
+  <!-- 3. Negative Segment (Coral Red - Downward Trough & Recovery) -->
+  <path d="M 550 440 L 590 570 L 650 440 L 734 440" 
+        fill="none" 
+        stroke="#EF4444" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- ========================================== -->
+  <!-- SENTIMENT STATE NODES                      -->
+  <!-- ========================================== -->
+  <!-- Positive Node (Green Peak) -->
+  <circle cx="430" cy="310" r="20" fill="#10B981" />
+  
+  <!-- Neutral Node (Amber Center) -->
+  <circle cx="510" cy="440" r="20" fill="#F59E0B" />
+  
+  <!-- Negative Node (Red Trough) -->
+  <circle cx="590" cy="570" r="20" fill="#EF4444" />
+</svg>
