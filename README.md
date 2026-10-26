@@ -33,6 +33,7 @@ TweetSense-Engine ships with **two independent classifiers**, so you can pick th
 | **Best for** | Fast, sparse, vocabulary-exact matching | Capturing semantic similarity between words |
 | **Strength** | Lightweight, no external embedding download | Handles synonyms and unseen phrasing better |
 
+
 Both models share the same text preprocessing pipeline (emoticon normalization, stopword removal, lemmatization) before vectorization, so predictions stay consistent across endpoints.
 
 ---
